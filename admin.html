@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Add Admin</title>
+        <script>
+            function x()
+            {
+                if(document.admin.Aname.value==="" || document.admin.Apass.value==="")
+                    {
+                        alert("fill all details");
+                        return false;
+                    }
+                if(document.admin.Apass.value.length<10)
+                    {
+                        alert("invalid number");
+                        return false;
+                    }
+            }
+        </script>
+    </head>
+    <body>
+        <center>
+        <h1>Add Admin</h1>
+        <form action="" name="admin" method="post">
+            <table>
+                <tr><td>User Name</td><td><input type="text" name="Aname"></td></tr>
+                <tr><td>Password</td><td><input type="text" name="Apass"></td></tr>
+                <tr><td><button type="submit" onclick="return x()">Submit</button></td></tr>
+            </table>
+        </form></center>
+    </body>
+</html>

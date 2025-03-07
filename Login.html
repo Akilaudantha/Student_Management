@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Login</title>
+        <script>
+            function x()
+            {
+               if(document.logon.username.value===""||document.login.password.value==="")
+                   {
+                       alert("Username & Password are required");
+                       return false;
+                   }
+                
+            }
+        </script>
+    </head>
+    
+    <body>
+        <center>
+        <form action="login.php" name="login" method="POST">
+            
+                <h2>Welcome to Student Management System</h2>
+                <input type="text" name="username" placeholder="Username"><br>
+                <input type="password" name="password" placeholder="Password"><br>
+                <button type="submit" onclick="return x()">Login</button> <button type="reset">Reset</button> 
+
+            </form>
+            </center>
+    </body>
+</html>
