@@ -1,16 +1,52 @@
 <html>
     <head>
         <title>UpdateDelete</title>
+         <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                padding-top:150px;
+            }
+            form {
+                background: white;
+                padding: 20px;
+                
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+                text-align: center;
+            }
+            input {
+                width: 90%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            button {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: white;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            button:hover {
+                background-color: #0056b3;
+            }
+        </style>
     </head>
     <body>
         <center>
         
         <h1>Update/Delete</h1>
-        <form action="" method="post">
+        <form action="update.php" method="post">
             <tr><td>Index</td><td><input type="text" name="index"></td></tr>
             <tr>
-                <select><option>Update</option>
-                <option>Delete</option></select>
+                <select name="option"><option value="update">Update</option>
+                <option value="delete">Delete</option></select>
             </tr>
             <tr><td><button type="submit">Submit</button></td></tr>
         </form></center>

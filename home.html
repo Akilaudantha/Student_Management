@@ -1,52 +1,69 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 100px;
+            text-align: center;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            margin: auto;
+        }
+        form {
+            margin-bottom: 15px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
 <body>
-    <center>
-    <form action="registrasion.html" method="post">
-        <table>
-   <tr><td> <input type="submit" name="sturegistrasion" value="Student Registrasion"></td></tr>
-           
-            
-            </table>
+
+<div class="container">
+    <h2>Welcome to Student Management System</h2>
+
+    <form action="registration.html" method="post">
+        <input type="submit" name="sturegistration" value="Student Registration">
     </form>
-    
+
     <form action="display.php" method="post">
-        <table>
-   <tr><td> <input type="submit" name="stulist" value="Student List"></td></tr>
-           
-            
-            </table>
+        <input type="submit" name="stulist" value="Student List">
     </form>
-    
+
     <form action="update.html" method="post">
-         <table>
-    <tr><td>
-                <input type="submit" name="update" value="Update">
-                </td></tr> </table>
+        <input type="submit" name="update" value="Update">
     </form>
-    
+
     <form action="search.html" method="post">
-         <table>
-     
-            <tr><td>
-                <input type="submit" name="search" value="Search">
-                </td></tr></table>
+        <input type="submit" name="search" value="Search">
     </form>
-    
+
     <form action="admin.html" method="post">
-         <table>
-     
-           <tr><td>
-                <input type="submit" name="addadmin" value="Add Admin">
-                </td></tr></table>
+        <input type="submit" name="addadmin" value="Add Admin">
     </form>
-    
+
     <form action="login.html" method="post">
-         <table>
-     
-           <tr><td>
-                <input type="submit" name="exit" value="Exit">
-                </td></tr></table>
+        <input type="submit" name="exit" value="Exit">
     </form>
-        </center>
-    </body>
+</div>
+
+</body>
 </html>

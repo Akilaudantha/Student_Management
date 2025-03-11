@@ -1,29 +1,62 @@
 <html>
     <head>
         <title>Login</title>
-        <script>
-            function x()
-            {
-               if(document.logon.username.value===""||document.login.password.value==="")
-                   {
-                       alert("Username & Password are required");
-                       return false;
-                   }
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                padding-top:150px;
+            }
+            form {
+                background: white;
+                padding: 20px;
                 
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                width: 300px;
+                text-align: center;
+            }
+            input {
+                width: 90%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+            button {
+                width: 100%;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: #007bff;
+                color: white;
+                cursor: pointer;
+                margin-top: 10px;
+            }
+            button:hover {
+                background-color: #0056b3;
+            }
+        </style>
+
+        <script>
+            function x() {
+                if (document.login.username.value === "" || document.login.password.value === "") {
+                    alert("Username & Password are required");
+                    return false;
+                }
             }
         </script>
     </head>
-    
+
     <body>
         <center>
-        <form action="login.php" name="login" method="POST">
-            
-                <h2>Welcome to Student Management System</h2>
+            <h2>Welcome to Student Management System</h2>
+            <form action="login.php" name="login" method="POST">
                 <input type="text" name="username" placeholder="Username"><br>
                 <input type="password" name="password" placeholder="Password"><br>
-                <button type="submit" onclick="return x()">Login</button> <button type="reset">Reset</button> 
-
+                <button type="submit" onclick="return x()">Login</button>
+                <button type="reset">Reset</button>
             </form>
-            </center>
-    </body>
+        </center>
+    </body>
 </html>
